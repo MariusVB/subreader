@@ -144,23 +144,7 @@ const _ = () => {
       </div>
 
       <div style={{ width: "50%" }}>
-        <pre>
-          <code>
-            {/* {JSON.stringify(root, null, 2)} */}
-            {/* {console.log(root)} */}
-            <br />
-            <br />
-            <br />
-            {`type ${root.name} = ${typeTreeToString(root, 0, true)}`}
-            {/* {root.children?.length > 1
-              ? `type = ${root.map(
-                  (t) => `{
-            ${t.name} : ${t.type}
-}`
-                )}`
-              : `type ${root.name} = ${typeToString(root[0])}`} */}
-          </code>
-        </pre>
+        <pre>{`type ${root.name} = ${typeTreeToString(root, 0, true)}`}</pre>
       </div>
     </div>
   );
